@@ -1,0 +1,7 @@
+$label-palette: map-remove($foundation-palette, (
+    primary,
+    secondary
+)) !default;
+
+
+@include foundation-progress-element;
