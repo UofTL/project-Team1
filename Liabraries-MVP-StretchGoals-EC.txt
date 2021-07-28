@@ -1,0 +1,40 @@
+1) Libraries to be Used:
+
+HTML==>base of any webpage
+CSS==>to give some style to our webpage app
+JS==>base of any webpage
+JQuery==>because of it's lightweight characteristics
+Moment.js==> if we need to include date/time==>not sure it will be useful
+
+JSON==>lightweight characteristics
+Should we also include JSON as the API call will be JSON?
+
+Should we include official definition for each library?
+Any other library to use?
+
+alternative to bootstrap we need to choose within the following
+https://blog.coursesity.com/top-bootstrap-alternatives/#:~:text=%2015%20Top%20Bootstrap%20Alternatives%20in%202021%20,on%20Normalize.css%20and%20gives%20design%20and...%20More%20
+
+
+2) Minimum Viable Product (MVP) Requirements
+Customer – will be new comers looking for settlement in Canada
+Channels – IRCC link and/or any other event for new comers
+Relationship – welcome new comers at the airport, follow up every 2 month and then every 6 month  and then every years
+Value Proposition – Our team will assist new comers in their settlement to their new community and offer some additional service 
+Key Activities – Settlement service, english service, employment service
+Key Resources – Funding from IRCC
+Key Partnerships – IRCC
+Revenue – Funding from IRCC based on PR# time spend per immigrant, and service delivered
+Costs – office cost, website app cost, employees salaries cost
+
+3) Stretch Goals
+Additional service such as employment service
+https://blog.api.rakuten.net/top-10-best-jobs-apis-linkedin-indeed-glassdoor-and-others/
+
+Interactive online English game for new comers to improve their english level if needed for kids and adults
+Temporary housing service  if we want to extend to refugees
+Service that connect new comers with established canadian families to help them with their integration and  better understand canadians traditions
+....
+
+
+
