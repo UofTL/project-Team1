@@ -47,3 +47,5 @@ axios.request(options).then(function (response) {
 }).catch(function (error) {
 	console.error(error);
 });
+
+3) Google Maps API==>ask Andy for more which one should we used
