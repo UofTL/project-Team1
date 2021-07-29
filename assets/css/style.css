@@ -1,7 +1,48 @@
-$label-palette: map-remove($foundation-palette, (
-    primary,
-    secondary
-)) !default;
+body {
+    /* more on this crazy alphanumerical value in a minute! */
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+  }
 
 
-@include foundation-progress-element;
+.opening section {
+    padding: 20px 35px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.opening h1 {
+    height: 150px;
+    width: 150px;
+}
+
+.opening h4 {
+    font-size: 1.55vw;
+    text-align: left;
+
+}
+
+.opening nav {
+    margin: 7px 0;
+}
+
+.opening nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.opening nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
