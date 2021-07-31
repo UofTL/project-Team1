@@ -37,11 +37,18 @@
     <!-- We can now combine rows and columns when there's only one column in that row -->
     <div class="row medium-8 large-7 columns">
       <div class="search-container">
-        
+        <!-- Search Input-->
+      <form>
         <div>
-          <input type="text" placeholder="Search">
+          <input type="text" id="searchcity" placeholder="Enter City Name" ></input> 
+          <button class="submit-btn" type="button" id="searchButton"> Search City</button>
         </div>
-        
+      </form>
+      <!--showing past search history-->
+        <div class="search-history">
+          <ul class="city-list"></ul>
+        </div>
+
         <div class="">
            <iframe></iframe>
         </div>
@@ -84,6 +91,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
