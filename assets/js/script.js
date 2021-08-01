@@ -26,23 +26,28 @@ $(".city-list").on("click", "li", function(event){
 
 // function to store and populate search history
 function getCities(){
+    let reverseHistory=searchHistory.reverse();
     let storedCities= JSON.parse(localStorage.getItem("searchHistory"));
     if (storedCities !== null){
-        searchHistory=storedCities
+        reverseHistory=storedCities
     };
     $(".city-list").html("");
     //lists up to 4 city locations
-    for (i=0; i<searchHistory.length; i++){
-       if ( i===4){
-           break;
-       }
-    
-       
+    for (i=0;i<searchHistory.length; i++){
+    reverseHistory.unshift("storedCities");
+    //break at the 4th array 
+      if ( i===4){
+        break;
+    }       
     //populate new lists  
-    //let listitem=$("<button>".addClass("close-button").text(searchHistory[i]));
-    let listitem=$("<li>").addClass("list-group-item previousCity").text(searchHistory[i]);
-    console.log(listitem);
+    let listitem=$("<a>").attr({
+        class:"list-group-item previousCity button-group",
+        href: "#"
+    });
+    listitem.text(searchHistory[i]);
     $(".city-list").append(listitem);
+    //let listitem=$("<li>").addClass("list-group-item previousCity").text(searchHistory[i]);
+    //$(".city-list").append(listitem);
 }
 }
 //searches and adds to local storage 
@@ -52,4 +57,3 @@ $("#searchButton").click(function(event){
     localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
     getCities();
 });
-
