@@ -1,0 +1,37 @@
+.section2 {
+    display: inline-block;
+    width: 100%;
+}
+
+.floatleft {
+    width: 70%;
+    float: left;
+}
+
+.floatright {
+    float: right;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.topborder {
+    border-top: 1px solid #606060;
+    width: 43%;
+}
+
+.spacetop {
+    padding-top: 8px;
+}
+
+.h2 {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+    display: inline;
+}
