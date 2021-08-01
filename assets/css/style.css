@@ -1,69 +1,37 @@
-body {
-    /* more on this crazy alphanumerical value in a minute! */
-    color: #8cadb3;
-    font-family: Helvetica, Arial, sans-serif;
-  
-  }
-
-
-.opening section {
-    padding: 20px 35px;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
+.section2 {
+    display: inline-block;
+    width: 100%;
 }
 
-.opening h1 {
-    height: 150px;
-    width: 150px;
+.floatleft {
+    width: 70%;
+    float: left;
 }
 
-.opening h3 {
-    font-size: 20px;
-    text-align: left;
+.floatright {
+    float: right;
 
 }
 
-.opening nav {
-    margin: 7px 0;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-.opening nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+.topborder {
+    border-top: 1px solid #606060;
+    width: 43%;
 }
 
-.opening nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.spacetop {
+    padding-top: 8px;
 }
 
-
-
-  .blog-post {
-      border: solid black;
-      margin-top: 30px;
-  }
-  
-  .search-container {
-    display: flex;
-    justify-content: space-between;
-    border: solid whitesmoke;
-      margin-top: 30px;
-  }
-
-  .container {
-    border: solid whitesmoke;
-    margin-top: 40px;
-    
-  }
+.h2 {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+    display: inline;
+}
