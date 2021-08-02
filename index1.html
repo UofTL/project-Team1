@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style2.css">
   <title>First Step</title>
 </head>
@@ -15,7 +17,6 @@
     <section>
       <h1>
         <img src="assets/image/logo.png" alt="project logo" />
-
       </h1>
 
 
@@ -46,8 +47,8 @@
       <form>
         <div>
           <h3> <small>Search for a city</small></h3>
-          <input type="text" id="searchcity" placeholder="Enter City Name"></input>
-          <select name="province-name" id="province-name">
+          <input type="text" id="searchcity" placeholder="Enter City Name" required="required"></input>
+          <select name="province-name" id="province-name" required="required">
             <option disabled selected value>Select Province</option>
             <option value="AB">Alberta</option>
             <option value="BC">British Columbia</option>
@@ -74,6 +75,11 @@
       </div>
     </div>
 
+    <div>
+      <h4 id="title">First Step brings hassle-free data to your fingertips!</h4>
+      <h2><i class="fas fa-database"></i> <span id="city-title"></span></h2>
+
+    </div>
     <!-- Unemployment Rate -->
     <div class="container" id="unemployment-rate">
       <h3> <small>Unemployment Rate </small><span id="unemployment"></span></h3>
