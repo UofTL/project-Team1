@@ -67,3 +67,72 @@ body {
     margin-top: 40px;
     
   }
+
+
+  @media screen and (max-width: 768px) {
+
+    .search-container .container {
+      padding: 30px 15px;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+
+  
+    .opening {
+      flex: 0 32%;
+      flex-direction: row;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      
+      
+    }
+
+    .opening h1 {
+        width: 20%;
+        height: auto;
+        
+    }
+
+    .opneing section {
+        padding: 5px 10px;
+    }
+  
+}
+  
+  @media screen and (max-width: 575px) {
+  
+    .search-container .container {
+        padding: 30px 15px;
+      }
+    
+      .step h3 {
+        flex: 1 100%;
+        text-align: center;
+      }
+  
+    
+      .opening {
+        flex: 0 32%;
+        flex-direction: row;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+        
+      }
+  
+      .opening h1 {
+          width: 5%;
+          height: auto;
+          
+      }
+  
+      .opneing section {
+          padding: 5px 10px;
+  }
+  
+  
