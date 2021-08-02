@@ -1,100 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-<link rel="stylesheet" href="./assets/css/style2.css">
-<title>Immigrant Adbocacy</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" href="./assets/css/style2.css">
+  <title>First Step</title>
 </head>
+
 <body>
   <div class="opening">
-      <section>
-        <h1>
-          <img src="assets/image/logo.png" alt="project logo" />
-         
-        </h1>
-     
-        
-        <nav>
-          <ul>
-            <li>
-              <a href="#ethnocultural-diversity">Immigrant and Ethnocultural Diversity</a>
-            </li>
-            <li>
-              <a href="#unemployment-rate">Unemployment Rate</a>
-            </li>
-            <li>
-              <a href="#crime-rate">Crime Rate</a>
-            </li>
-            <li>
-              <a href="./index.html">Back</a>
-            </li>
-          </ul>
-        </nav>
+    <section>
+      <h1>
+        <img src="assets/image/logo.png" alt="project logo" />
 
-      </section>
-    </div>
-    
-    <!-- We can now combine rows and columns when there's only one column in that row -->
-    <div class="row medium-8 large-7 columns">
-      <div class="search-container">
+      </h1>
+
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#unemployment-rate">Unemployment Rate</a>
+          </li>
+          <li>
+            <a href="#ethnocultural-diversity">Immigrant and Ethnocultural Diversity</a>
+          </li>
+          <li>
+            <a href="#crime-rate">Crime Rate</a>
+          </li>
+          <li>
+            <a href="./index.html">Back</a>
+          </li>
+        </ul>
+      </nav>
+
+    </section>
+  </div>
+
+  <!-- We can now combine rows and columns when there's only one column in that row -->
+  <div class="row medium-8 large-7 columns">
+    <div class="search-container">
       <!-- Search Input-->
       <form>
         <div>
-          <input type="text" id="searchcity" placeholder="Enter City Name" ></input> 
-          <button class="submit-btn" type="button" id="searchButton"> Search City</button>
+          <h3> <small>Search for a city</small></h3>
+          <input type="text" id="searchcity" placeholder="Enter City Name"></input>
+          <select name="province-name" id="province-name">
+            <option disabled selected value>Select Province</option>
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland and Labrador</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="NT">Northwest Territories</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="YT">Yukon</option>
+          </select>
+          <button class="submit-btn button" type="submit" id="searchButton"> Search City</button>
         </div>
       </form>
       <!--showing past search history-->
-        <div class="search-history">
-          <ul class="city-list"></ul>
-        </div>
-      
-        <div class="">
-           <iframe></iframe>
-        </div>
+      <div class="search-history">
+        <ul class="city-list"></ul>
       </div>
 
-
-      <div class="container" id="ethnocultural-diversity">
-        <h3> <small>Immigrant and Ethnocultural Diversity</small></h3>
-        
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Mike Mikers</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="container" id="unemployment-rate">
-        <h3> <small>Unemployment Rate</small></h3>
-        
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Mike Mikers</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="container" id="crime-rate">
-        <h3><small>Crime Rate</small></h3>
-        
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Mike Mikers</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
+      <div class="">
+        <iframe></iframe>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+
+    <!-- Unemployment Rate -->
+    <div class="container" id="unemployment-rate">
+      <h3> <small>Unemployment Rate </small><span id="unemployment"></span></h3>
+      <p>The Labour Force Survey provides estimates of employment and unemployment. LFS data are used to produce the
+        well-known unemployment rate as well as other standard labour market indicators such as the employment rate and
+        the participation rate. June LFS data reflect labour market conditions during the week of June 13 to 19.
+        Released: 2021-07-09</p>
+      <div class="callout">
+        <ul class="menu simple">
+          <li><a target="_blank" href="https://www150.statcan.gc.ca/n1/daily-quotidien/210709/dq210709a-eng.htm">Click
+              Here for More
+              Information </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Immigrants Rate  -->
+    <div class="container" id="ethnocultural-diversity">
+      <h3> <small>Immigrants Rate </small><span id="immigrants"></span></h3>
+      <p>Canada has been a land of immigrants since the first European colonizers of the 16th century, a trend that
+        continues today. The 2016 Census provides a statistical portrait of immigration and ethnocultural diversity in
+        Canada. Immigrants (%) are people who reported they were or had ever been a landed immigrant or permanent
+        resident in Canada.</p>
+      <div class="callout">
+        <ul class="menu simple">
+          <li><a target="_blank"
+              href="https://www150.statcan.gc.ca/n1/daily-quotidien/171025/dq171025b-eng.htm?indid=14428-3&indgeo=0#data">Click
+              Here for More Information</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Crime Severity Indexes -->
+    <div class="container" id="crime-rate">
+      <h3><small>Crime Severity Indexes </small> <span id="crime"></span></h3>
+      <p>Crime Severity Indexes are based on Criminal Code incidents, including traffic offences, as well as other
+        federal statute violations. The base index was set at 100 for 2006 for Canada. Populations are based upon July
+        1st estimates from Statistics Canada, Centre for Demography. The reference date is January 1, 2011.</p>
+      <div class="callout">
+        <ul class="menu simple">
+          <li><a target="_blank"
+              href="https://www150.statcan.gc.ca/n1/daily-quotidien/210727/dq210727a-eng.htm?indid=4751-1&indgeo=0">Click
+              Here for More Information</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
