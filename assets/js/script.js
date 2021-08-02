@@ -14,17 +14,20 @@ $(function () {
 });
 //Empty List until given an event
 let searchHistory = [];
+let city = [];
 //Triggers when the search is clicked.
-$(".city-list").on("click", "li", function (event) {
-  event.preventDefault();
-  let previousCityName = $(this).text();
-  //console.log("Previous city : "+ previousCityName);
+// $(".city-list").on("click", "li", function (event) {
+//   event.preventDefault();
+//   let previousCityName = $(this).text();
+//   //console.log("Previous city : "+ previousCityName);
 
-  //call trigger functions;
+//   //call trigger functions;
 
-});
+// });
 
 // function to store and populate search history
+
+
 function getCities() {
 
   let reverseHistory = searchHistory.reverse();
@@ -44,31 +47,48 @@ function getCities() {
     let listitem = $("<a>").attr({
       class: "list-group-item previousCity button-group",
       href: "#",
-      dataProvince: $("select").val(),
+      dataProvince: searchHistory[i].province,
     });
-    listitem.text(searchHistory[i]);
+    listitem.text(searchHistory[i].cityName);
     $(".city-list").append(listitem);
     //let listitem=$("<li>").addClass("list-group-item previousCity").text(searchHistory[i]);
     //$(".city-list").append(listitem);
   }
 }
-//searches and adds to local storage 
-$("#searchButton").click(function (event) {
-  let city = $("#searchcity").val();
+//handle form submission; searches and adds to local storage 
+$("form").on("submit", function (event) {
+  event.preventDefault();
+  city = {
+    cityName: $("#searchcity").val(),
+    province: $("#province-name").val()
+  }
   searchHistory.push(city)
   localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
   getCities();
+  getGeoCode(city.province);
+  showCityTitle(city);
+  $("form").trigger("reset");
 });
 
-//SEARCH CITY HANDLER
-var searchCityHandler = function (event) {
+//Triggers when the search is clicked
+$(".city-list").on("click", function (event) {
   var province = event.target.getAttribute("dataProvince");
-  getGeoCode(province);
+  var cityName = event.target.textContent;
+  city = {
+    cityName: cityName,
+    province: province
+  }
+  getGeoCode(city.province);
+  showCityTitle(city);
+});
+
+
+// show city title
+var showCityTitle = function(){
+  $("#city-title").text(city.cityName+", "+ city.province);
 }
 
-
 //STATISTICS CANADA API STARTS HERE
-
 var caApiUrl = "https://statcan-all-indicators-statcan-apicast-production.api.canada.ca/v1/ind-all.json";
 var caOptions = {
   headers: {
@@ -131,14 +151,6 @@ var showIndicators = function (geoCode) {
   $("#crime").text(theCrime);
 }
 
-// function handler the form submission
-var formHandler = function (event) {
-  event.preventDefault();
-  var province = $(this).find("select").val();
-  console.log("search", province);
-  getGeoCode(province);
-  $("form").trigger("reset");
-}
 
 //turn province name to geocode
 var getGeoCode = function(province){
@@ -202,11 +214,8 @@ switch (province) {
 }
 //STATISTICS CANADA API ENDS HERE
 
-//handle the form submit
-$("form").on("submit", formHandler);
 
 //fetch data when loading the page
 document.onload = fetchApi();
 
-//event listenr on search city link
-$(".city-list").on("click", searchCityHandler);
+
