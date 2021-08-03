@@ -1,0 +1,62 @@
+.section2 {
+    display: inline-block;
+    width: 100%;
+}
+
+.floatleft {
+    width: 70%;
+    float: left;
+}
+
+.floatright {
+    float: right;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.topborder {
+    border-top: 1px solid #606060;
+    width: 43%;
+}
+
+.spacetop {
+    padding-top: 8px;
+}
+
+.h2 {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+    display: inline;
+}
+
+.h1 {
+    font-size: 4em;
+}
+
+.tagline {
+    width: 60%;
+    float: left;
+    padding-left: 3em;
+    padding-top: 32px;
+}
+
+.tagline-paragraph {
+    font-size: 1.5em;
+}
+
+.tagline-section {
+    height: 532px;
+}
+
+.tagline-graphic {
+    float: right;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
