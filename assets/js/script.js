@@ -15,19 +15,8 @@ $(function () {
 //Empty List until given an event
 let searchHistory = [];
 let city = [];
-//Triggers when the search is clicked.
-// $(".city-list").on("click", "li", function (event) {
-//   event.preventDefault();
-//   let previousCityName = $(this).text();
-//   //console.log("Previous city : "+ previousCityName);
-
-//   //call trigger functions;
-
-// });
 
 // function to store and populate search history
-
-
 function getCities() {
 
   let reverseHistory = searchHistory.reverse();
@@ -36,6 +25,8 @@ function getCities() {
     reverseHistory = storedCities
   };
   $(".city-list").html("");
+  let name = $("<h3> <small>").html("History");
+  $(".city-list").prepend(name);
   //lists up to 4 city locations
   for (i = 0; i < searchHistory.length; i++) {
     reverseHistory.unshift("storedCities");
@@ -43,16 +34,16 @@ function getCities() {
     if (i === 4) {
       break;
     }
+    
     //populate new lists  
     let listitem = $("<a>").attr({
-      class: "list-group-item previousCity button-group",
+      class: "button secondary stacked expanded",
       href: "#",
       dataProvince: searchHistory[i].province,
     });
     listitem.text(searchHistory[i].cityName);
     $(".city-list").append(listitem);
-    //let listitem=$("<li>").addClass("list-group-item previousCity").text(searchHistory[i]);
-    //$(".city-list").append(listitem);
+
   }
 }
 //handle form submission; searches and adds to local storage 
