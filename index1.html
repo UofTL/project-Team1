@@ -69,7 +69,9 @@
       </form>
       <!--showing past search history-->
       <div class="columns medium-3 search-history">
+        <h3 class="">History</h3>
         <ul class="city-list"></ul>
+      
       </div>
     </div>
 
@@ -130,10 +132,10 @@
       <h3>Find a Neighbourhood</h3>
       <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
       <div id="map"></div>
-      <div class="row">
-        <div class="small-2 large-4 columns" id="walkScore"> <i class="fas fa-walking fa-2x"></i></div>
-        <div class="small-2 large-4 columns" id="bikeScore"> <i class="fas fa-bicycle fa-2x"></i></div>
-        <div class="small-2 large-4 columns" id="publicTransit"> <i class="fas fa-bus-alt fa-2x"></i> </div>
+      <div class="row scores">
+        <div class="small-2 large-4 columns"> <i class="fas fa-walking fa-2x"></i> <p> Walk Score </p><span id="walkScore"></span> <p id="walkDescription"></p></div>
+        <div class="small-2 large-4 columns"> <i class="fas fa-bicycle fa-2x"></i><p>Bike Score</p></Bike><span id="bikeScore"></span><p id="bikeDescription"></p></div>
+        <div class="small-2 large-4 columns" > <i class="fas fa-bus-alt fa-2x"></i><p>Public Transit Score</p><span id="transitScore"></span><p id="transitDescription"></p></div>
       </div>
     </div>
   </div>

@@ -64,6 +64,9 @@ footer{
     margin: 30px 0;
   }
 
+  .history{
+    display: block;
+  }
   .container {
     border: solid whitesmoke;
     margin-top: 40px;
@@ -71,10 +74,8 @@ footer{
   }
   .search-history{
     border: solid whitesmoke;
-    display: flex;
   }
   
-<<<<<<< HEAD
   #map {
     height: 400px;
     width: 100%;
@@ -100,6 +101,13 @@ footer{
     text-align: center;
     padding-top: 20px;
   }
-=======
- 
->>>>>>> 60b4f816d8bc8857e2f6ad3bbd109946ff3b1bae
+
+  .scores{
+    padding:5% 5% 0;
+    height:250px;
+  }
+
+  #walkScore, #bikeScore, #transitScore{
+    font-size: 3rem;
+    font-weight: 900;
+  }
