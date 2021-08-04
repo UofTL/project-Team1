@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: space-between;
     border: solid whitesmoke;
-      margin: 30px 0;
+    margin: 30px 0;
   }
 
   .container {
@@ -67,6 +67,7 @@ body {
     margin-top: 40px;
     
   }
+
 
 
   @media screen and (max-width: 768px) {
@@ -136,3 +137,10 @@ body {
   }
   
   
+
+  .search-history{
+    border: solid whitesmoke;
+    display: flex;
+  }
+  
+  }
