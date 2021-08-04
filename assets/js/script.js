@@ -25,8 +25,7 @@ function getCities() {
     reverseHistory = storedCities
   };
   $(".city-list").html("");
-  let name = $("<h3> <small>").html("History");
-  $(".city-list").prepend(name);
+
   //lists up to 4 city locations
   for (i = 0; i < searchHistory.length; i++) {
     reverseHistory.unshift("storedCities");
@@ -38,12 +37,10 @@ function getCities() {
     //populate new lists  
     let listitem = $("<a>").attr({
       class: "button secondary stacked expanded",
-      href: "#",
       dataProvince: searchHistory[i].province,
     });
     listitem.text(searchHistory[i].cityName);
     $(".city-list").append(listitem);
-
   }
 }
 //handle form submission; searches and adds to local storage 
@@ -206,7 +203,121 @@ switch (province) {
 //STATISTICS CANADA API ENDS HERE
 
 
-//fetch data when loading the page
+//WALK SCORES API STARTS HERE
+var walkScoreHeader = {
+  headers: {
+      "Origin": "https://siyanguo.github.io",
+      'Access-Control-Allow-Origin': '*'
+  }
+}
+var fetchWalkScore = function () {
+  var apiUrl = 'https://cors-anywhere.herokuapp.com/https://api.walkscore.com/score?format=json&lat='+searchLat+'&lon='+searchLon+'&transit=1&bike=1&wsapikey=ba22f3ccf1824ce39c01839a42864c76';
+  fetch(apiUrl, walkScoreHeader)
+      .then(function (response) {
+          return response.json();
+      })
+      .then(function (data) {
+          console.log("walkscore", data);
+          displayScores(data)
+      })
+}
+
+//display results 
+var displayScores = function(data){
+var walkScore = data.walkscore;
+var walkDescription = data.description;
+  $("#walkScore").text(walkScore);
+  $("#walkDescription").text(walkDescription);
+
+  var bikeScore = data.bike.score;
+var bikeDescription = data.bike.description;
+  $("#bikeScore").text(bikeScore);
+  $("#bikeDescription").text(bikeDescription);
+
+  var transitScore = data.transit.score;
+var transitDescription = data.transit.description;
+  $("#transitScore").text(transitScore);
+  $("#transitDescription").text(transitDescription);
+}
+
+
+//WALK SCORES API ENDS HERE
+
+//GOOGLE MAPS API STARTS HERE
+var searchLon;
+var searchLat;
+
+function initAutocomplete() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 43.651070, lng: -79.347015 },
+      zoom: 8,
+      mapTypeId: "roadmap",
+  });
+  // Create the search box and link it to the UI element.
+  const input = document.getElementById("pac-input");
+  const searchBox = new google.maps.places.SearchBox(input);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+  // Bias the SearchBox results towards current map's viewport.
+  map.addListener("bounds_changed", () => {
+      searchBox.setBounds(map.getBounds());
+  });
+  let markers = [];
+  // Listen for the event fired when the user selects a prediction and retrieve
+  // more details for that place.
+  searchBox.addListener("places_changed", () => {
+      const places = searchBox.getPlaces();
+
+      if (places.length == 0) {
+          return;
+      }
+      // Clear out the old markers.
+      markers.forEach((marker) => {
+          marker.setMap(null);
+      });
+      markers = [];
+      // For each place, get the icon, name and location.
+      const bounds = new google.maps.LatLngBounds();
+      places.forEach((place) => {
+          if (!place.geometry || !place.geometry.location) {
+              console.log("Returned place contains no geometry");
+              return;
+          }
+          const icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25),
+          };
+          //save lat and lon and then fetch walk scores
+          searchLon = place.geometry.viewport.Eb.g;
+          searchLat = place.geometry.viewport.mc.g;
+          fetchWalkScore();
+          // Create a marker for each place.
+          markers.push(
+              new google.maps.Marker({
+                  map,
+                  icon,
+                  title: place.name,
+                  position: place.geometry.location,
+              })
+          );
+
+          if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+          } else {
+              bounds.extend(place.geometry.location);
+          }
+      });
+      map.fitBounds(bounds);
+  });
+}
+
+//GOOGLE MAPS API ENDS HERE
+
+//fetch Statistics data when loading the page
 document.onload = fetchApi();
 
-
+//display google map when page is loaded
+document.addEventListener("load", initAutocomplete);

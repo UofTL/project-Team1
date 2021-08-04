@@ -1,26 +1,16 @@
-
-
 .search-box {
     text-align: center;
     border: solid 40px white;
-    padding: 50px 50px;
-    margin-top: 20px;
+    padding:50px;
     background-color: whitesmoke;
-    
-}
-
-.p1 {
-    text-align: center;
+    height:500px;
 }
 
 .container {
         border: solid whitesmoke;
         margin-top: 40px;
-        text-align: center;
-        
-    
+        text-align: center;   
 }
-
 
 .footer {
     padding: 30px;
@@ -28,12 +18,72 @@
 
 .navbar-menu {
     background-color: lightgoldenrodyellow;
+    padding-right: 2%;
 }
 
 .navbar-brand {
     background-color: lightgoldenrodyellow;
 }
 
-.history {
-    text-align: center;
+
+.content ul{
+    margin-left: 0;
 }
+.city-list{
+    height: 40px;
+}
+
+.city-title{
+    margin:30px 30px 0;
+}
+
+ .input{
+     width: 300px;
+ }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+    height:40px;
+    margin-top: 10px;
+  }
+
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+
+  .heading{
+    text-align: center;
+    margin-top: 60px;
+  }
+
+ .content:last-child{
+     margin-top: 100px;
+ }
+
+ .container:last-child{
+     margin-top: 50px;
+ }
+
+  .scores{
+    padding:5% 5% 0;
+    height:300px;
+  }
+
+  #walkScore, #bikeScore, #transitScore{
+    font-size: 3rem;
+    font-weight: 900;
+  }
+ 
+
