@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/search-page.css">
+  <title>First Step</title>
+</head>
+
+<body>
+  <nav class="navbar has-shadow">
+    <!-- Logo / Brand -->
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="./assets/image/Immigration Advocacy Logo.png" alt="site logo" style="max-height: 125px"
+          class="py-2 px-2">
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-end">
+
+        <a class="navbar-item" href="#statistics">Statistics</a>
+        <a class="navbar-item" href="#unemployment-rate">Unemployment Rate</a>
+        <a class="navbar-item" href="#ethnocultural-diversity">Immigrants Rate</a>
+        <a class="navbar-item" href="#crime-rate">Crime Rate</a>
+        <a class="navbar-item" href="#googleMaps">Neighbourhood</a>
+        <a class="navbar-item" href="./index.html">Back</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <h2 class="heading" id="statistics">Statistics & Data <i class="fas fa-database"></i> </h2>
+    <section class="search-box">
+      <form>
+        <h3>Find a City</h3>
+        <div>
+          <input class="input is-focused" type="text" id="searchcity" placeholder="Enter City Name" required="required"></input>
+          
+          <div class="select">
+          <select name="province-name" id="province-name" required="required">
+            <option disabled selected value>Select Province</option>
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland and Labrador</option>`
+            <option value="NS">Nova Scotia</option>
+            <option value="NT">Northwest Territories</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="YT">Yukon</option>
+          </select>
+        </div>
+          <button class="submit-btn button" type="submit" id="searchButton"> Search City</button>
+        </div>
+      </form>
+
+      <div class="container">
+        <h4>Search History:</h4>
+
+        <ul class="city-list"></ul>
+      </div>
+
+
+      <div class="city-title">
+        <h4 >We are glad to bring hassle-free data to your fingertips for: <h2 id="city-title"></h2></h4>
+      </div>
+
+
+    </section>
+
+    <!-- Unemployment Rate -->
+    <div class="container" id="unemployment-rate">
+      <h3> <small>Unemployment Rate </small><span id="unemployment"></span></h3>
+      <p>The Labour Force Survey provides estimates of employment and unemployment. LFS data are used to produce the
+        well-known unemployment rate as well as other standard labour market indicators such as the employment rate and
+        the participation rate. June LFS data reflect labour market conditions during the week of June 13 to 19.
+        Released: 2021-07-09</p>
+      <p><a target="_blank" href="https://www150.statcan.gc.ca/n1/daily-quotidien/210709/dq210709a-eng.htm">Click
+          Here for More
+          Information </a></p>
+    </div>
+
+    <!-- Immigrants Rate  -->
+    <div class="container" id="ethnocultural-diversity">
+      <h3> <small>Immigrants Rate </small><span id="immigrants"></span></h3>
+      <p>Canada has been a land of immigrants since the first European colonizers of the 16th century, a trend that
+        continues today. The 2016 Census provides a statistical portrait of immigration and ethnocultural diversity in
+        Canada. Immigrants (%) are people who reported they were or had ever been a landed immigrant or permanent
+        resident in Canada.</p>
+      <p><a target="_blank"
+          href="https://www150.statcan.gc.ca/n1/daily-quotidien/171025/dq171025b-eng.htm?indid=14428-3&indgeo=0#data">Click
+          Here for More Information</a></p>
+    </div>
+
+    <!-- Crime Severity Indexes -->
+    <div class="container" id="crime-rate">
+      <h3><small>Crime Severity Indexes </small> <span id="crime"></span></h3>
+      <p>Crime Severity Indexes are based on Criminal Code incidents, including traffic offences, as well as other
+        federal statute violations. The base index was set at 100 for 2006 for Canada. Populations are based upon July
+        1st estimates from Statistics Canada, Centre for Demography. The reference date is January 1, 2011.</p>
+      <p><a target="_blank"
+          href="https://www150.statcan.gc.ca/n1/daily-quotidien/210727/dq210727a-eng.htm?indid=4751-1&indgeo=0">Click
+          Here for More Information</a></p>
+    </div>
+
+    <!-- google maps  -->
+    <div class="content" id="googleMaps"> 
+    <h2 class="heading">Neighbourhood Search & Accessbility <i class="fas fa-database"></i> </h2>
+    <div class="container">
+      <h3>Find a Neighbourhood</h3>
+      <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+      <div id="map"></div>
+
+      <div class="scores columns">
+        <div class="column"> <i class="fas fa-walking fa-2x"></i>
+          <p> Walk Score </p><span id="walkScore"></span>
+          <p id="walkDescription"></p>
+        </div>
+
+        <div class="column"> <i class="fas fa-bicycle fa-2x"></i>
+          <p>Bike Score</p>
+          </Bike><span id="bikeScore"></span>
+          <p id="bikeDescription"></p>
+        </div>
+
+        <div class="column"> <i class="fas fa-bus-alt fa-2x"></i>
+          <p>Public Transit Score</p><span id="transitScore"></span>
+          <p id="transitDescription"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+  <!-- footer-->
+  <footer class="footer">
+    <div class="content has-text-left">
+      <p> &copy; Immigration Advocacy</p>
+    </div>
+  </footer>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRZ_PWx5bgcoGQvWHuRoxMaxo2n6iF9oE&callback=initAutocomplete&libraries=places&v=weekly"
+    async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

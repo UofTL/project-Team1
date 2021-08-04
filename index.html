@@ -1,44 +1,58 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Immigration Advocacy</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"/>
-        <link rel="stylesheet" href="./assets/css/styles.css"/>
 
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration Advocacy</title>
+    <!--logo added to head page when launch the browser-->
+    <link rel="shortcut icon" type="image/jpg" href="./assets/image/logo.png" />
+    <!--font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles-new.css" />
+
+</head>
+
 <body>
-
+    <!--add header
+    <header>-->
     <nav class="navbar has-shadow">
         <!-- Logo / Brand -->
-        <div class ="navbar-brand">
-        <a class="navbar-item">
-            <img src="./assets/image/Immigration Advocacy Logo.png" alt="site logo" style="max-height: 125px" class="py-2 px-2">
-        </a>
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="./assets/image/Immigration Advocacy Logo.png" alt="site logo" style="max-height: 125px" class="py-2 px-2">
+            </a>
         </div>
 
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-end">
-                <a class="navbar-item" href="#home">Home</a>
-                <a class="navbar-item"  href="#contact">Contact Us</a>
-                <a class="navbar-item"  href="#search">Search Now</a>
+                <!--we should include something  about our team
+                <a class="navbar-item" href="#home">Home</a>-->
+                <a class="navbar-item" href="#team">Our Team</a>
+                <a class="navbar-item" href="#search">Search</a>
+                <a class="navbar-item" href="#contact">Contact Us</a>
                 <a class="navbar-item" href="">Resources</a>
             </div>
         </div>
     </nav>
-
-<!--Hero-->
-<section class="tagline-section">
-    <div class="tagline "><h1 class="h1 content">Tagline With Your Unique Selling Proposition</h1>
+    <!--add header
+     </header>-->
+    <!--Hero-->
+    <!-- this section should be removed-->
+    <section class="tagline-section">
+        <div class="tagline ">
+            <h1 class="h1 content">Meet Our Team</h1>
+            <section class="tagline-section">
+                <!-- <div class="tagline "><h1 class="h1 content">Tagline With Your Unique Selling Proposition</h1>
         <p class="tagline-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
         </div>
    <div class="tagline-graphic"><img src="./assets/image/iPhone graphic.png"></div> 
-</section>
+</section>-->
 
-
+                <!-- this section should be removed
 <hr>
-<!-- Our Three Facets-->
-<section class="section" id="services">
+<!-- Our Three Facets
+<section class="section">
     <div class="container">
         <div class="columns">
             <div class="column">
@@ -53,7 +67,7 @@
             </div>
             <div class="column">
                 <img src="./assets/image/Crime Rate.png" class="card-content is-flex is-horizontal-center">
-                <h2 class="content has-text-centered">Crime Severity Indexes</h2>
+                <h2 class="content has-text-centered">Crime Rate</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
             </div>   
         </div>
@@ -62,68 +76,154 @@
 </section>
 
 <hr>
+                <section id="members">
+                    <div>
+                        <h2 class="section-title primary-border">Meet Our Team</h2>
+                    </div>-->
 
-<!--Core Competencies-->
-<section class="section section2">
-    <h2 class="floatleft ">Heading describing your application and advantages</h2>
-    <p class="floatleft">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <img src="./assets/image/Placholder image.jpg" class="floatright" style="max-height: 250px">
-</section>
+                <div class="members">
+                    <!-- first members-->
+                    <article class="members">
+                        <div class="members-img members-1">
+                            <div>
+                                <h3>Abrar Chowdhry</h3>
+                                <h4>Landing Page</h4>
+                            </div>
+                        </div>
+                        <div class="members-descr">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                                <a href="https://github.com/UofTL/project-Team1.git" class="fa fa-github"></a>
+                                <a href="https://www.linkedin.com/in/eleonoregabriellecaclard" class="fa fa-linkedin"></a>
+                            </p>
+                        </div>
+                    </article>
 
-<hr>
+                    <!-- second members -->
+                    <article class="members">
+                        <div class="members-img members-2">
+                            <div>
+                                <h3>Damon Ha</h3>
+                                <h4>Bulma/CSS</h4>
+                            </div>
+                        </div>
+                        <div class="members-descr">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                            <a href="https://github.com/UofTL/project-Team1.git" class="fa fa-github"></a>
+                            <a href="https://www.linkedin.com/in/eleonoregabriellecaclard" class="fa fa-linkedin"></a>
+                            </p>
+                        </div>
+                    </article>
 
-<!--Mission Statement-->
-<section class="section">
-    <div class="content has-text-centered">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.</p>
-    </div>
-    <div class="center topborder">
-    </div>
-    <div class="content has-text-centered spacetop">
-    <h2>Our Mission Statement</h2>
-    <h4>Immigration Advocacy</h4>
-    </div>
-</section>
+                    <!-- third members -->
+                    <article class="members">
+                        <div class="members-img members-3">
+                            <div>
+                                <h3>Eleonore Caclard</h3>
+                                <h4>Google Maps API/Landing Page</h4>
+                            </div>
+                        </div>
+                        <div class="members-descr">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                                <a href="https://github.com/UofTL" class="fa fa-github"></a>
+                                <a href="https://www.linkedin.com/in/eleonoregabriellecaclard" class="fa fa-linkedin"></a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- 4th members -->
+            <section id="your-teams" class="teams">
+                <article class="team">
+                    <img src="./assets/image/member-4.jpg" />
+                    <div class="team-bio text-left">
+                        <h3>Nerin Kaur</h3>
+                        <h4>Search Functionality</h4>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                            <a href="https://github.com/UofTL/project-Team1.git" class="fa fa-github"></a>
+                            <a href="https://www.linkedin.com/in/eleonoregabriellecaclard" class="fa fa-linkedin"></a>
+                        </p>
+                    </div>
+                </article>
 
-<hr>
+                <!-- 5th members bio -->
+                <article class="team">
+                    <div class="team-bio text-right">
+                        <h3>Siyan Guo</h3>
+                        <h4>Ethnocultural API/Google Maps API</h4>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                            <a href="https://github.com/UofTL/project-Team1.git" class="fa fa-github"></a>
+                            <a href="https://www.linkedin.com/in/eleonoregabriellecaclard" class="fa fa-linkedin"></a>
+                        </p>
+                    </div>
+                    <img src="./assets/image/member-5.png" />
+                </article>
 
-<!--Contact Us-->
-<section class="section" id="contact">
-    <h2 class="floatleft">Get In Touch</h2>
-    <p class="floatleft">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-    <form>
-        <div class="field">
-            <div class="control">
-                <input type="email" class="input" placeholder="Email Address">
-            </div>
-        </div>
-        <div class="field">
-            <div class="control">
-                <input type="text" class="input" placeholder="Name">
-            </div>
-        </div>
-        <div class="field">
-            <div class="control">
-              <textarea class="textarea" placeholder="Message"></textarea>
-            </div>
-        </div>
-        <button class="button is-light grey is-medium floatright">Send</button>
-    </form>
-</section>    
+                <!--Core Competencies-->
+                <section class="section section2">
+                    <h2 class="floatleft ">Heading describing your application and advantages</h2>
+                    <p class="floatleft">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <img src="./assets/image/Placholder image.jpg" class="floatright" style="max-height: 250px">
+                </section>
 
-<hr>
+                <hr>
 
-<!-- Call to Action-->
-<section class="section section2" id="search">
-    <p class="floatleft">Now that you have seen the advantages of using our tool, let's get searching for your new community in Canada today</p>
-    <button class="button is-light grey is-medium floatright"><a href="./Search-page.html">Search Now</a></button>
-</section>
+                <!--Mission Statement-->
+                <section class="section">
+                    <div class="content has-text-centered">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.</p>
+                    </div>
+                    <div class="center topborder">
+                    </div>
+                    <div class="content has-text-centered spacetop">
+                        <h2>Our Mission Statement</h2>
+                        <h4>Immigration Advocacy</h4>
+                    </div>
+                </section>
 
-<!-- footer-->
-<footer class="footer">
-    <div class="content has-text-left">
-    <p> &copy; Immigration Advocacy</p>
-    </div>
-</footer>
+                <hr>
+
+                <!--Contact Us-->
+                <section class="section" id="contact">
+                    <h2 class="floatleft">Get In Touch</h2>
+                    <p class="floatleft">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                    <form>
+                        <div class="field">
+                            <div class="control">
+                                <input type="email" class="input" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input type="text" class="input" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <button class="button is-light grey is-medium floatright">Send</button>
+                    </form>
+                </section>
+
+                <hr>
+
+                <!-- Call to Action-->
+                <section class="section section2" id="search">
+                    <p class="floatleft">Now that you have seen the advantages of using our tool, let's get searching for your new community in Canada today</p>
+                    <button class="button is-dark grey is-medium floatright"><a href="./search-page.html">Search Now</a></button>
+                </section>
+
+                <!-- footer-->
+                <footer class="footer">
+                    <div class="content has-text-left">
+                        <p> &copy; Immigration Advocacy</p>
+                        <a href="https://github.com/UofTL/project-Team1.git" class="fa fa-github"></a>
+                    </div>
+                </footer>
 </body>
+
 </html>
