@@ -2,9 +2,10 @@
 
 .search-box {
     text-align: center;
-    border: solid lightblue;
+    border: solid 40px white;
     padding: 50px 50px;
     margin-top: 20px;
+    background-color: whitesmoke;
     
 }
 
@@ -20,6 +21,15 @@
     
 }
 
+
 .footer {
     padding: 30px;
+}
+
+.navbar-menu {
+    background-color: lightgoldenrodyellow;
+}
+
+.navbar-brand {
+    background-color: lightgoldenrodyellow;
 }
