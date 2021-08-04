@@ -5,48 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/search-page.css">
   <title>First Step</title>
 </head>
-
-<body>
-  <div class="opening">
-    <section>
-      <h1>
-        <img src="assets/image/logo.png" alt="project logo" />
-      </h1>
-
-
-      <nav>
-        <ul>
-          <li>
-            <a href="#unemployment-rate">Unemployment Rate</a>
-          </li>
-          <li>
-            <a href="#ethnocultural-diversity">Immigrant and Ethnocultural Diversity</a>
-          </li>
-          <li>
-            <a href="#crime-rate">Crime Rate</a>
-          </li>
-          <li>
-            <a href="./index.html">Back</a>
-          </li>
-        </ul>
-      </nav>
-
-    </section>
+<section>
+    <figure class="image is-128x128">
+        <br><img src="./assets/image/logo.png"></br>
+      </figure>
+<div class="tabs is-right">
+    <ul>
+      <li class="is-active"><a href="#unemployment-rate">Unemployment Rate</a></li>
+      <li><a href="#ethnocultural-diversity">Immigrant and Ethnocultural Diversity</a></li>
+      <li><a href="#crime-rate">Crime Rate</a></li>
+      <li><a href="./index.html">Back</a></li>
+    </ul>
   </div>
+</section>
 
-  <!-- We can now combine rows and columns when there's only one column in that row -->
-  <div class="row medium-8 large-7 columns">
-    <div class="search-container">
-      <!-- Search Input-->
-      <form>
+<div class="content">
+    <section class="search-box">
+    <h1>Search for a city</h1>
+    <form>
         <div>
-          <h3> <small>Search for a city</small></h3>
+          
           <input type="text" id="searchcity" placeholder="Enter City Name" required="required"></input>
           <select name="province-name" id="province-name" required="required">
             <option disabled selected value>Select Province</option>
@@ -65,21 +47,13 @@
           <button class="submit-btn button" type="submit" id="searchButton"> Search City</button>
         </div>
       </form>
-      <!--showing past search history-->
       <div class="columns medium-3 search-history">
         <ul class="city-list"></ul>
+    
       </div>
+    </section>
 
-      <div class="">
-        <iframe></iframe>
-      </div>
-    </div>
-
-    <div>
-      <h4 id="title">First Step brings hassle-free data to your fingertips!</h4>
-      <h2><i class="fas fa-database"></i> <span id="city-title"></span></h2>
-
-    </div>
+    <p class="p1">First Step brings hassle-free data to your fingertips!</p>
     <!-- Unemployment Rate -->
     <div class="container" id="unemployment-rate">
       <h3> <small>Unemployment Rate </small><span id="unemployment"></span></h3>
@@ -88,11 +62,11 @@
         the participation rate. June LFS data reflect labour market conditions during the week of June 13 to 19.
         Released: 2021-07-09</p>
       <div class="callout">
-        <ul class="menu simple">
-          <li><a target="_blank" href="https://www150.statcan.gc.ca/n1/daily-quotidien/210709/dq210709a-eng.htm">Click
+        <nav class="menu simple">
+          <p><a target="_blank" href="https://www150.statcan.gc.ca/n1/daily-quotidien/210709/dq210709a-eng.htm">Click
               Here for More
-              Information </a></li>
-        </ul>
+              Information </a></p>
+        </nav>
       </div>
     </div>
 
@@ -104,11 +78,11 @@
         Canada. Immigrants (%) are people who reported they were or had ever been a landed immigrant or permanent
         resident in Canada.</p>
       <div class="callout">
-        <ul class="menu simple">
-          <li><a target="_blank"
+        <nav class="menu simple">
+          <p><a target="_blank"
               href="https://www150.statcan.gc.ca/n1/daily-quotidien/171025/dq171025b-eng.htm?indid=14428-3&indgeo=0#data">Click
-              Here for More Information</a></li>
-        </ul>
+              Here for More Information</a></p>
+        </nav>
       </div>
     </div>
 
@@ -119,14 +93,21 @@
         federal statute violations. The base index was set at 100 for 2006 for Canada. Populations are based upon July
         1st estimates from Statistics Canada, Centre for Demography. The reference date is January 1, 2011.</p>
       <div class="callout">
-        <ul class="menu simple">
-          <li><a target="_blank"
+        <nav class="menu simple">
+          <p><a target="_blank"
               href="https://www150.statcan.gc.ca/n1/daily-quotidien/210727/dq210727a-eng.htm?indid=4751-1&indgeo=0">Click
-              Here for More Information</a></li>
-        </ul>
+              Here for More Information</a></p>
+        </nav>
       </div>
     </div>
   </div>
+
+  <!-- footer-->
+<footer class="footer">
+  <div class="content has-text-left">
+  <p> &copy; Immigration Advocacy</p>
+  </div>
+</footer>
   <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRZ_PWx5bgcoGQvWHuRoxMaxo2n6iF9oE&callback=initAutocomplete&libraries=places&v=weekly"
         async></script>

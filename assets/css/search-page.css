@@ -1,0 +1,25 @@
+
+
+.search-box {
+    text-align: center;
+    border: solid lightblue;
+    padding: 50px 50px;
+    margin-top: 20px;
+    
+}
+
+.p1 {
+    text-align: center;
+}
+
+.container {
+        border: solid whitesmoke;
+        margin-top: 40px;
+        text-align: center;
+        
+    
+}
+
+.footer {
+    padding: 30px;
+}
