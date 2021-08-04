@@ -1,3 +1,6 @@
+Live URL :https://uoftl.github.io/project-Team1/
+Repor URL :https://github.com/UofTL/project-Team1.git
+
 # Immigration Advocacy
 ![3](https://user-images.githubusercontent.com/83087376/128109547-01d6e91f-81b7-4685-b226-ee3cae2297cb.png)
 
