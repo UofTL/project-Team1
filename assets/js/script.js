@@ -37,12 +37,10 @@ function getCities() {
     //populate new lists  
     let listitem = $("<a>").attr({
       class: "button secondary stacked expanded",
-      href: "#",
       dataProvince: searchHistory[i].province,
     });
     listitem.text(searchHistory[i].cityName);
     $(".city-list").append(listitem);
-
   }
 }
 //handle form submission; searches and adds to local storage 

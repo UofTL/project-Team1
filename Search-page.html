@@ -5,82 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD:index1.html
-  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style2.css">
-=======
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="./assets/css/search-page.css">
->>>>>>> 77adfce27d8f8181c3020af91f385f17e2f58d8b:Search-page.html
   <title>First Step</title>
 </head>
-<body>
-<<<<<<< HEAD:index1.html
-  <div class="opening">
-    <section>
-      <h1>
-        <img src="assets/image/logo.png" alt="project logo" />
-      </h1>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="#unemployment-rate">Unemployment Rate</a>
-          </li>
-          <li>
-            <a href="#ethnocultural-diversity">Immigrant and Ethnocultural Diversity</a>
-          </li>
-          <li>
-            <a href="#crime-rate">Crime Rate</a>
-          </li>
-          <li>
-            <a href="./index.html">Back</a>
-          </li>
-        </ul>
-      </nav>
-=======
+<body>
   <nav class="navbar has-shadow">
     <!-- Logo / Brand -->
-    <div class ="navbar-brand">
-    <a class="navbar-item">
-        <img src="./assets/image/Immigration Advocacy Logo.png" alt="site logo" style="max-height: 125px" class="py-2 px-2">
-    </a>
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="./assets/image/Immigration Advocacy Logo.png" alt="site logo" style="max-height: 125px"
+          class="py-2 px-2">
+      </a>
     </div>
 
     <div class="navbar-menu" id="nav-links">
-        <div class="navbar-end">
-            <a class="navbar-item"  href="#unemployment-rate">Unemployment Rate</a>
-            <a class="navbar-item"  href="#ethnocultural-diversity">Immigrant and Ethnocultural Diversity</a>
-            <a class="navbar-item"  href="#crime-rate">Crime Rate</a>
-            <a class="navbar-item" href="./index.html">Back</a>
-        </div>
+      <div class="navbar-end">
+
+        <a class="navbar-item" href="#statistics">Statistics</a>
+        <a class="navbar-item" href="#unemployment-rate">Unemployment Rate</a>
+        <a class="navbar-item" href="#ethnocultural-diversity">Immigrants Rate</a>
+        <a class="navbar-item" href="#crime-rate">Crime Rate</a>
+        <a class="navbar-item" href="#googleMaps">Neighbourhood</a>
+        <a class="navbar-item" href="./index.html">Back</a>
+      </div>
     </div>
-</nav>
->>>>>>> 77adfce27d8f8181c3020af91f385f17e2f58d8b:Search-page.html
+  </nav>
 
-
-<<<<<<< HEAD:index1.html
-  <!-- We can now combine rows and columns when there's only one column in that row -->
-  <div class="row medium-8 large-7 columns">
-    <h2 class="heading">Statistics & Data</h2>
-    <div class="search-container">
-      <!-- Search Input-->
+  <div class="content">
+    <h2 class="heading" id="statistics">Statistics & Data <i class="fas fa-database"></i> </h2>
+    <section class="search-box">
       <form>
         <h3>Find a City</h3>
         <div>
-=======
-<div class="content">
-    <section class="search-box">
-    <h1>Search for a city</h1>
-    <form>
-        <div>
+          <input class="input is-focused" type="text" id="searchcity" placeholder="Enter City Name" required="required"></input>
           
->>>>>>> 77adfce27d8f8181c3020af91f385f17e2f58d8b:Search-page.html
-          <input type="text" id="searchcity" placeholder="Enter City Name" required="required"></input>
+          <div class="select">
           <select name="province-name" id="province-name" required="required">
             <option disabled selected value>Select Province</option>
             <option value="AB">Alberta</option>
@@ -95,29 +58,21 @@
             <option value="SK">Saskatchewan</option>
             <option value="YT">Yukon</option>
           </select>
+        </div>
           <button class="submit-btn button" type="submit" id="searchButton"> Search City</button>
         </div>
       </form>
-      <div class="columns medium-3 search-history">
-        <h3 class="">History</h3>
+      <div class="container">
+        <h4>Search History:</h4>
         <ul class="city-list"></ul>
-<<<<<<< HEAD:index1.html
-      
       </div>
-    </div>
 
-    <div>
-      <h4 id="title">First Step brings hassle-free data to your fingertips!</h4>
-      <h2><i class="fas fa-database"></i> <span id="city-title"></span></h2>
-
-    </div>
-=======
-    
+      <div class="city-title">
+        <h4 >We are glad to bring hassle-free data to your fingertips for: <h2 id="city-title"></h2></h4>
       </div>
+
     </section>
 
-    <p class="p1">First Step brings hassle-free data to your fingertips!</p>
->>>>>>> 77adfce27d8f8181c3020af91f385f17e2f58d8b:Search-page.html
     <!-- Unemployment Rate -->
     <div class="container" id="unemployment-rate">
       <h3> <small>Unemployment Rate </small><span id="unemployment"></span></h3>
@@ -125,13 +80,9 @@
         well-known unemployment rate as well as other standard labour market indicators such as the employment rate and
         the participation rate. June LFS data reflect labour market conditions during the week of June 13 to 19.
         Released: 2021-07-09</p>
-      <div class="callout">
-        <nav class="menu simple">
-          <p><a target="_blank" href="https://www150.statcan.gc.ca/n1/daily-quotidien/210709/dq210709a-eng.htm">Click
-              Here for More
-              Information </a></p>
-        </nav>
-      </div>
+      <p><a target="_blank" href="https://www150.statcan.gc.ca/n1/daily-quotidien/210709/dq210709a-eng.htm">Click
+          Here for More
+          Information </a></p>
     </div>
 
     <!-- Immigrants Rate  -->
@@ -141,13 +92,9 @@
         continues today. The 2016 Census provides a statistical portrait of immigration and ethnocultural diversity in
         Canada. Immigrants (%) are people who reported they were or had ever been a landed immigrant or permanent
         resident in Canada.</p>
-      <div class="callout">
-        <nav class="menu simple">
-          <p><a target="_blank"
-              href="https://www150.statcan.gc.ca/n1/daily-quotidien/171025/dq171025b-eng.htm?indid=14428-3&indgeo=0#data">Click
-              Here for More Information</a></p>
-        </nav>
-      </div>
+      <p><a target="_blank"
+          href="https://www150.statcan.gc.ca/n1/daily-quotidien/171025/dq171025b-eng.htm?indid=14428-3&indgeo=0#data">Click
+          Here for More Information</a></p>
     </div>
 
     <!-- Crime Severity Indexes -->
@@ -156,50 +103,53 @@
       <p>Crime Severity Indexes are based on Criminal Code incidents, including traffic offences, as well as other
         federal statute violations. The base index was set at 100 for 2006 for Canada. Populations are based upon July
         1st estimates from Statistics Canada, Centre for Demography. The reference date is January 1, 2011.</p>
-      <div class="callout">
-        <nav class="menu simple">
-          <p><a target="_blank"
-              href="https://www150.statcan.gc.ca/n1/daily-quotidien/210727/dq210727a-eng.htm?indid=4751-1&indgeo=0">Click
-              Here for More Information</a></p>
-        </nav>
-      </div>
+      <p><a target="_blank"
+          href="https://www150.statcan.gc.ca/n1/daily-quotidien/210727/dq210727a-eng.htm?indid=4751-1&indgeo=0">Click
+          Here for More Information</a></p>
     </div>
+
     <!-- google maps  -->
-    <h2 class="heading">Neighbourhood Search & Accessbility </h2>
+    <div class="content" id="googleMaps"> 
+    <h2 class="heading">Neighbourhood Search & Accessbility <i class="fas fa-database"></i> </h2>
     <div class="container">
       <h3>Find a Neighbourhood</h3>
       <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
       <div id="map"></div>
-      <div class="row scores">
-        <div class="small-2 large-4 columns"> <i class="fas fa-walking fa-2x"></i> <p> Walk Score </p><span id="walkScore"></span> <p id="walkDescription"></p></div>
-        <div class="small-2 large-4 columns"> <i class="fas fa-bicycle fa-2x"></i><p>Bike Score</p></Bike><span id="bikeScore"></span><p id="bikeDescription"></p></div>
-        <div class="small-2 large-4 columns" > <i class="fas fa-bus-alt fa-2x"></i><p>Public Transit Score</p><span id="transitScore"></span><p id="transitDescription"></p></div>
+
+      <div class="scores columns">
+        <div class="column"> <i class="fas fa-walking fa-2x"></i>
+          <p> Walk Score </p><span id="walkScore"></span>
+          <p id="walkDescription"></p>
+        </div>
+
+        <div class="column"> <i class="fas fa-bicycle fa-2x"></i>
+          <p>Bike Score</p>
+          </Bike><span id="bikeScore"></span>
+          <p id="bikeDescription"></p>
+        </div>
+
+        <div class="column"> <i class="fas fa-bus-alt fa-2x"></i>
+          <p>Public Transit Score</p><span id="transitScore"></span>
+          <p id="transitDescription"></p>
+        </div>
+
       </div>
     </div>
   </div>
 
-<<<<<<< HEAD:index1.html
-  <footer><p> &copy; Immigration Advocacy</p></footer>
-
+</div>
+  <!-- footer-->
+  <footer class="footer">
+    <div class="content has-text-left">
+      <p> &copy; Immigration Advocacy</p>
+    </div>
+  </footer>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRZ_PWx5bgcoGQvWHuRoxMaxo2n6iF9oE&callback=initAutocomplete&libraries=places&v=weekly"
     async></script>
-
-=======
-  <!-- footer-->
-<footer class="footer">
-  <div class="content has-text-left">
-  <p> &copy; Immigration Advocacy</p>
-  </div>
-</footer>
-  <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRZ_PWx5bgcoGQvWHuRoxMaxo2n6iF9oE&callback=initAutocomplete&libraries=places&v=weekly"
-        async></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
->>>>>>> 77adfce27d8f8181c3020af91f385f17e2f58d8b:Search-page.html
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
