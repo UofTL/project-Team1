@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style2.css">
   <title>First Step</title>
 </head>
@@ -18,7 +20,6 @@
       <h1>
         <img src="assets/image/logo.png" alt="project logo" />
       </h1>
-
 
       <nav>
         <ul>
@@ -42,11 +43,12 @@
 
   <!-- We can now combine rows and columns when there's only one column in that row -->
   <div class="row medium-8 large-7 columns">
+    <h2 class="heading">Statistics & Data</h2>
     <div class="search-container">
       <!-- Search Input-->
       <form>
+        <h3>Find a City</h3>
         <div>
-          <h3> <small>Search for a city</small></h3>
           <input type="text" id="searchcity" placeholder="Enter City Name" required="required"></input>
           <select name="province-name" id="province-name" required="required">
             <option disabled selected value>Select Province</option>
@@ -68,10 +70,6 @@
       <!--showing past search history-->
       <div class="search-history">
         <ul class="city-list"></ul>
-      </div>
-
-      <div class="">
-        <iframe></iframe>
       </div>
     </div>
 
@@ -126,7 +124,26 @@
         </ul>
       </div>
     </div>
+    <!-- google maps  -->
+    <h2 class="heading">Neighbourhood Search & Accessbility </h2>
+    <div class="container">
+      <h3>Find a Neighbourhood</h3>
+      <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+      <div id="map"></div>
+      <div class="row">
+        <div class="small-2 large-4 columns" id="walkScore"> <i class="fas fa-walking fa-2x"></i></div>
+        <div class="small-2 large-4 columns" id="bikeScore"> <i class="fas fa-bicycle fa-2x"></i></div>
+        <div class="small-2 large-4 columns" id="publicTransit"> <i class="fas fa-bus-alt fa-2x"></i> </div>
+      </div>
+    </div>
   </div>
+
+  <footer><p> &copy; Immigration Advocacy</p></footer>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRZ_PWx5bgcoGQvWHuRoxMaxo2n6iF9oE&callback=initAutocomplete&libraries=places&v=weekly"
+    async></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
   <script src="./assets/js/script.js"></script>

@@ -1,10 +1,8 @@
 body {
     /* more on this crazy alphanumerical value in a minute! */
-    color: #9cabad;
+    color: #4f5859;
     font-family: Helvetica, Arial, sans-serif;
-  
   }
-
 
 .opening section {
     padding: 20px 35px;
@@ -18,6 +16,13 @@ body {
     z-index: 9999;
 }
 
+footer{
+  margin-top: 40px;
+  height:60px;
+  padding: 20px 35px;
+  background-color: whitesmoke;
+}
+
 .opening h1 {
     height: 150px;
     width: 150px;
@@ -26,7 +31,6 @@ body {
 .opening h3 {
     font-size: 20px;
     text-align: left;
-
 }
 
 .opening nav {
@@ -48,8 +52,6 @@ body {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
-
   .blog-post {
       border: solid black;
       margin-top: 30px;
@@ -66,4 +68,34 @@ body {
     border: solid whitesmoke;
     margin-top: 40px;
     
+  }
+  .search-history{
+    border: solid whitesmoke;
+    display: flex;
+  }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+
+  .heading{
+    text-align: center;
+    padding-top: 20px;
   }
