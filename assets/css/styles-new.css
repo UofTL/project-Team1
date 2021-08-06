@@ -191,17 +191,27 @@
     /*members need to upload their picture*/
     
     .members-1 {
-        background-image: url("../images/members-1.jpg");
+        background-image: url("../image/member-1.jpg");
         position: relative;
     }
     
     .members-2 {
-        background-image: url("../images/members-2.jpg");
+        background-image: url("../image/member-2.jpg");
         position: relative;
     }
     
     .members-3 {
         background-image: url("../image/member-3.JPG");
+        position: relative;
+    }
+    
+    .members-4 {
+        background-image: url("../image/member-4.png");
+        position: relative;
+    }
+    
+    .members-5 {
+        background-image: url("../image/member-5.jpg");
         position: relative;
     }
     
