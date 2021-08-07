@@ -1,7 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
     --primary-color: linear-gradient(135deg, #b3e2ff 10%, #0a1861 100%);
     --secondary-color: #0a1861;
     --tertiary-color: #e9e7e7;
+}
+
+
+/*adding ideo background to be more interactive*/
+
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-size: 17px;
+    color: white;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .search-box {
@@ -10,12 +33,14 @@
     padding: 50px;
     background-color: whitesmoke;
     height: 500px;
+    color: white;
 }
 
 .container {
     border: solid whitesmoke;
     margin-top: 40px;
     text-align: center;
+    color: white;
 }
 
 .footer {
@@ -83,6 +108,7 @@
 .heading {
     text-align: center;
     margin-top: 60px;
+    color: white;
 }
 
 .content:last-child {
