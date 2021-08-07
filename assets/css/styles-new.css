@@ -90,6 +90,19 @@
         color: var(--tertiary-color);
         font-size: 4em;
     }
+    
+    .p {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex: 1;
+        margin: 20px;
+        background: var(--primary-color);
+        color: var(--tertiary-color);
+        font-size: 4em;
+    }
     /*
     .tagline {
         width: 60%;
