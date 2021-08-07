@@ -1,6 +1,4 @@
-//Search bar starts here- Creating an error
-//$(document).foundation();
-
+//Search bar starts here
 $(function () {
   $('.search')
     .bind('click', function (event) {
@@ -13,7 +11,7 @@ $(function () {
     })
 });
 //Empty List until given an event
-let searchHistory = [];
+let searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
 let city = [];
 
 // function to store and populate search history
@@ -25,6 +23,7 @@ function getCities() {
     reverseHistory = storedCities
   };
   $(".city-list").html("");
+
 
   //lists up to 4 city locations
   for (i = 0; i < searchHistory.length; i++) {
@@ -42,7 +41,9 @@ function getCities() {
     listitem.text(searchHistory[i].cityName);
     $(".city-list").append(listitem);
   }
+  
 }
+
 //handle form submission; searches and adds to local storage 
 $("form").on("submit", function (event) {
   event.preventDefault();
@@ -75,6 +76,7 @@ $(".city-list").on("click", function (event) {
 var showCityTitle = function(){
   $("#city-title").text(city.cityName+", "+ city.province);
 }
+
 
 //STATISTICS CANADA API STARTS HERE
 var caApiUrl = "https://statcan-all-indicators-statcan-apicast-production.api.canada.ca/v1/ind-all.json";
@@ -323,3 +325,7 @@ document.onload = fetchApi();
 
 //display google map when page is loaded
 document.addEventListener("load", initAutocomplete);
+
+// Will return city after browser is refreshed 
+getCities();
+
