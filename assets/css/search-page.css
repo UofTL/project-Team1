@@ -1,16 +1,21 @@
+:root {
+    --primary-color: linear-gradient(135deg, #b3e2ff 10%, #0a1861 100%);
+    --secondary-color: #0a1861;
+    --tertiary-color: #e9e7e7;
+}
 
 .search-box {
     text-align: center;
     border: solid 40px white;
-    padding:50px;
+    padding: 50px;
     background-color: whitesmoke;
-    height:500px;
+    height: 500px;
 }
 
 .container {
-        border: solid whitesmoke;
-        margin-top: 40px;
-        text-align: center;   
+    border: solid whitesmoke;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .footer {
@@ -18,34 +23,45 @@
 }
 
 .navbar-menu {
-    background-color: lightgoldenrodyellow;
-    padding-right: 2%;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    /*opacity: 0.2;*/
+    top: 0;
+    background-position: 80%;
+    background-attachment: fixed;
+    background: var(--tertiary-color);
+    background-color: var(--tertiary-color);
+    /*background-image: url(../image/background.PNG);*/
+    color: white;
 }
 
 .navbar-brand {
-    background-color: lightgoldenrodyellow;
+    background-color: var(--primary-color)
 }
 
-
-.content ul{
+.content ul {
     margin-left: 0;
 }
-.city-list{
+
+.city-list {
     height: 40px;
 }
 
-.city-title{
-    margin:30px 30px 0;
+.city-title {
+    margin: 30px 30px 0;
 }
 
- .input{
-     width: 300px;
- }
-  
-  #map {
+.input {
+    width: 300px;
+}
+
+#map {
     height: 400px;
     width: 100%;
-  }
+}
 
 #pac-input {
     background-color: #fff;
@@ -56,35 +72,35 @@
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
     width: 400px;
-    height:40px;
+    height: 40px;
     margin-top: 10px;
-  }
+}
 
-  #pac-input:focus {
+#pac-input:focus {
     border-color: #4d90fe;
-  }
+}
 
-  .heading{
+.heading {
     text-align: center;
     margin-top: 60px;
-  }
+}
 
- .content:last-child{
-     margin-top: 100px;
- }
+.content:last-child {
+    margin-top: 100px;
+}
 
- .container:last-child{
-     margin-top: 50px;
- }
+.container:last-child {
+    margin-top: 50px;
+}
 
-  .scores{
-    padding:5% 5% 0;
-    height:300px;
-  }
+.scores {
+    padding: 5% 5% 0;
+    height: 300px;
+}
 
-  #walkScore, #bikeScore, #transitScore{
+#walkScore,
+#bikeScore,
+#transitScore {
     font-size: 3rem;
     font-weight: 900;
-  }
- 
-
+}
