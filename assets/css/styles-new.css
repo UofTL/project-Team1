@@ -5,6 +5,16 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        color: white;
+    }
+    
+    #myVideo {
+        position: fixed;
+        /*z-index: 1;*/
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
     }
     /*define the dominant color*/
     
@@ -76,6 +86,7 @@
         font-size: 22px;
         margin: 0;
         display: inline;
+        color: white;
     }
     
     .h1 {
@@ -87,8 +98,7 @@
         flex: 1;
         margin: 20px;
         background: var(--primary-color);
-        color: var(--tertiary-color);
-        font-size: 4em;
+        color: white font-size: 4em;
     }
     
     .p {
@@ -100,8 +110,7 @@
         flex: 1;
         margin: 20px;
         background: var(--primary-color);
-        color: var(--tertiary-color);
-        font-size: 4em;
+        color: white font-size: 4em;
     }
     /*
     .tagline {
@@ -120,16 +129,19 @@
     
     .tagline-paragraph {
         font-size: 1.5em;
+        color: white;
     }
     
     .tagline-section {
         height: 532px;
+        color: white;
     }
     
     .tagline-graphic {
         float: center;
         padding-top: 16px;
         padding-bottom: 16px;
+        color: white;
     }
     
     .navbar-menu {
@@ -147,13 +159,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        color: white;
     }
     
     .members {
         flex: 1;
-        margin: 20px;
+        margin: 0 auto;
         background: var(--tertiary-color);
-        color: var(--primary-color);
+        color: white
     }
     
     .members-img {
@@ -168,6 +181,7 @@
     .members-desc {
         padding: 25px;
         line-height: 1.3;
+        color: white;
     }
     
     .members-img {
@@ -187,6 +201,7 @@
         margin-bottom: 5px;
         top: 200px;
         transition: 0.6s;
+        color: white;
     }
     
     .members-img h4 {
@@ -196,6 +211,7 @@
         top: 200px;
         transition-delay: 0.2s;
         transition: 0.6s;
+        color: white;
     }
     
     .members:hover .members-img h3 {
@@ -276,8 +292,7 @@
         width: 900px;
         margin: 0 auto 30px auto;
         background: var(--tertiary-color);
-        color: black;
-        overflow: auto;
+        color: white overflow: auto;
     }
     
     .team img {
