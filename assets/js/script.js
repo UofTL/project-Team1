@@ -51,8 +51,25 @@ $("form").on("submit", function (event) {
     cityName: $("#searchcity").val(),
     province: $("#province-name").val()
   }
-  searchHistory.push(city)
-  localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+
+  //Capitalize first letter of City 
+  let capitalizedFirstLetter = city.cityName.charAt(0).toUpperCase();
+  let restOfWord = city.cityName.slice(1,city.cityName.length).toLowerCase();
+  let fullCapitalized = capitalizedFirstLetter + restOfWord;
+  city.cityName= fullCapitalized;
+
+  //Logic to prevent search history value to appear twice
+  let cityInArrayAlready = false;
+  for(let i = 0; i < searchHistory.length; i++) {
+    if((searchHistory[i].cityName === city.cityName) && (searchHistory[i].province === city.province)){
+    cityInArrayAlready = true;
+    }
+}
+  if (!cityInArrayAlready){
+    searchHistory.push(city)
+    localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+  }
+  
   getCities();
   getGeoCode(city.province);
   showCityTitle(city);
