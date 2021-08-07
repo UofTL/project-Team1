@@ -9,7 +9,7 @@
     /*define the dominant color*/
     
      :root {
-        --primary-color: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);
+        --primary-color: linear-gradient(135deg, #b3e2ff 10%, #0a1861 100%);
         ;
         --secondary-color: #0a1861;
         --tertiary-color: #e9e7e7;
@@ -32,7 +32,7 @@
     }
     
     footer {
-        background-image: url(../image/background.PNG);
+        /*background-image: url(../image/background.PNG);*/
         color: var(--tertiary-color);
         height: 10%;
         width: 100vw;
