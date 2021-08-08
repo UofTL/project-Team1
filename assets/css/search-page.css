@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 :root {
     --primary-color: linear-gradient(135deg, #b3e2ff 10%, #0a1861 100%);
     --secondary-color: #0a1861;
@@ -11,6 +11,7 @@
 * {
     box-sizing: border-box;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
