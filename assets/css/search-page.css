@@ -10,14 +10,12 @@
 
 * {
     box-sizing: border-box;
-    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
 body {
     margin: 0;
     font-size: 17px;
-    color: white;
 }
 
 #myVideo {
@@ -31,14 +29,13 @@ body {
 .search-box {
     text-align: center;
     border: solid 40px white;
-    padding: 50px;
     background-color: whitesmoke;
     height: 500px;
     color: white;
 }
 
 .container {
-    border: solid whitesmoke;
+    /* border: solid whitesmoke; */
     margin-top: 40px;
     text-align: center;
     color: white;
@@ -78,6 +75,7 @@ body {
 
 .city-title {
     margin: 30px 30px 0;
+    color:white
 }
 
 .input {
@@ -110,6 +108,11 @@ body {
     text-align: center;
     margin-top: 60px;
     color: white;
+}
+
+.content h3, .content h2, .container h4, #statistics{
+    color:white;
+    z-index: -1;
 }
 
 .content:last-child {
