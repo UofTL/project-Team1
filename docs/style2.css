@@ -1,0 +1,179 @@
+body {
+    /* more on this crazy alphanumerical value in a minute! */
+    color: #4f5859;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+.opening section {
+    padding: 20px 35px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+footer{
+  margin-top: 40px;
+  height:60px;
+  padding: 20px 35px;
+  background-color: whitesmoke;
+}
+
+.opening h1 {
+    height: 150px;
+    width: 150px;
+}
+
+.opening h3 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.opening nav {
+    margin: 7px 0;
+}
+
+.opening nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.opening nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+  .blog-post {
+      border: solid black;
+      margin-top: 30px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    border: solid whitesmoke;
+    margin: 30px 0;
+  }
+
+  .history{
+    display: block;
+  }
+  .container {
+    border: solid whitesmoke;
+    margin-top: 40px;
+    
+  }
+
+  .search-history{
+    border: solid whitesmoke;
+  }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+
+  .heading{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .scores{
+    padding:5% 5% 0;
+    height:250px;
+  }
+
+  #walkScore, #bikeScore, #transitScore{
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  @media screen and (max-width: 768px) {
+
+    .search-container .container {
+      padding: 30px 15px;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+
+  
+    .opening {
+      flex: 0 32%;
+      flex-direction: row;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      
+      
+    }
+
+    .opening h1 {
+        width: 20%;
+        height: auto;
+        
+    }
+
+    .opneing section {
+        padding: 5px 10px;
+    }
+  
+}
+  
+  @media screen and (max-width: 575px) {
+  
+    .search-container .container {
+        padding: 30px 15px;
+      }
+    
+      .step h3 {
+        flex: 1 100%;
+        text-align: center;
+      }
+  
+    
+      .opening {
+        flex: 0 32%;
+        flex-direction: row;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+        
+      }
+  
+      .opening h1 {
+          width: 5%;
+          height: auto;
+          
+      }
+  
+      .opneing section {
+          padding: 5px 10px;}
+      }
