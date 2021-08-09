@@ -16,8 +16,9 @@ Repo URL :https://github.com/UofTL/project-Team1.git
 * And a touch of love
 
 ## Website
-![Main-page](https://uoftl.github.io/project-Team1/assets/image/vision.jfif)
-![Search-page](https://uoftl.github.io/project-Team1/assets/image/stat.JPG)
+![Main-page](https://user-images.githubusercontent.com/84641285/128651324-f5684af9-cad5-4dc3-89d8-4d15892fcae5.png)
+![Search-page](https://user-images.githubusercontent.com/84641285/128651344-4373a386-4109-445c-bac1-39a73f585b9a.png)
+
 
 
 ## User Story
