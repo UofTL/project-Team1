@@ -24,7 +24,8 @@ Repo URL :https://github.com/UofTL/project-Team1.git
 ## User Story
 
 ```
-As a non-profit helping newcomers to settle in Canada. I want to be presented with an efficient app to better help newcomers to settle in their new communities based on newcomers family criteria.
+As a non-profit helping newcomers to settle in Canada. 
+I want to be presented with an efficient app to better help newcomers to settle in their new communities based on newcomers family criteria.
 
 ```
 
