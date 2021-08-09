@@ -312,7 +312,7 @@ function initAutocomplete() {
           //save lat and lon and then fetch walk scores
           console.log("location", place.geometry);
           searchLon = place.geometry.viewport.Eb.g;
-          searchLat = place.geometry.viewport.lc.g;
+          searchLat = place.geometry.viewport.mc.g;
           fetchWalkScore();
           // Create a marker for each place.
           markers.push(
